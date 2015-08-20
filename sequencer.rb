@@ -1,24 +1,24 @@
 
 def sequencer(list_of_integers)
   concatenate = []
-  sequence = []
+  ordered_sequence = []
   list_of_integers.each_index do |integer_index|
     if integer_index < list_of_integers.index(list_of_integers.last)
       if list_of_integers[integer_index+1] - list_of_integers[integer_index] == 1
-        sequence << list_of_integers[integer_index]
-        sequence << list_of_integers[integer_index + 1]
-        sequence.uniq!
+        ordered_sequence << list_of_integers[integer_index]
+        ordered_sequence << list_of_integers[integer_index + 1]
+        ordered_sequence.uniq!
       else
-        if !sequence.empty?
-          concatenate << sequence.first.to_s + "-" + sequence.last.to_s
-          sequence.clear
+        if !ordered_sequence.empty?
+          concatenate << ordered_sequence.first.to_s + "-" + ordered_sequence.last.to_s
+          ordered_sequence.clear
         else
           concatenate << list_of_integers[integer_index].to_s
         end
       end
     else
-      if !sequence.empty?
-          concatenate << sequence.first.to_s + "-" + sequence.last.to_s
+      if !ordered_sequence.empty?
+          concatenate << ordered_sequence.first.to_s + "-" + ordered_sequence.last.to_s
       else
         concatenate << list_of_integers[integer_index].to_s
       end

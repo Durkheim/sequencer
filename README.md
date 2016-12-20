@@ -1,6 +1,6 @@
 ####Objective
 
-Write a method that accepts an array of integers and outputs a string with each number separated by a comma. Sequential numbers (e.g 1, 2, 3..) in the array should be represented in the string as a range with a hyphon (1-3). Here are some example inputs and outputs.
+Write a method that accepts an array of integers and outputs a string with each number separated by a comma. Sequential numbers (e.g 1, 2, 3..) in the array should be represented in the string as a range with a hyphen (1-3). Here are some example inputs and outputs.
 
   Input: [1,2,3,5,7,9,10,11]
 
